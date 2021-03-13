@@ -45,7 +45,6 @@ exports.postCompose = function (req, res, next) {
   });
 };
 
-
 exports.getExists = function (req, res, next) {
   res.render("exists");
 };
@@ -120,3 +119,7 @@ exports.deletePost = function (req,res,next) {
 exports.getGoogle = passport.authenticate('google',{
   scope: ['profile']
 });
+
+exports.getRedirect = (req,res,next) => {
+  res.send("<h1>Redirect Route</h1>");
+};

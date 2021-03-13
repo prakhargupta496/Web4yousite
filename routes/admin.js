@@ -24,4 +24,6 @@ router.delete('/delete/:postId',adminController.deletePost)
 
 router.get('/google',adminController.getGoogle)
 
+router.get('/redirect',adminController.getRedirect)
+
 module.exports = router
